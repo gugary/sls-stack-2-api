@@ -4,6 +4,8 @@ service: sls-api
 resources:
   # DynamoDB
   - ${file(resources/dynamodb-table.yml)}
+  # S3
+  - ${file(resources/s3-bucket.yml)}
   
 # Use the serverless-webpack plugin to transpile ES6
 plugins:
